@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insurance Policy Creation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: left;
+            font-size: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"], input[type="date"], select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        textarea {
+            height: 100px;
+        }
+        .checkbox-group {
+            display: flex;
+            justify-content: space-between;
+        }
+        .checkbox-group input {
+            margin-right: 5px;
+        }
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .buttons button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .buttons button.save {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .buttons button.cancel {
+            background-color: #f44336;
+            color: white;
+        }
+        .buttons button.next {
+            background-color: #008CBA;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Insurance Policy Creation</h2>
+
+    <div class="form-group">
+        <label for="customerName">Customer Name</label>
+        <input type="text" id="customerName" name="customerName">
+    </div>
+
+    <div class="form-group">
+        <label for="dob">Date of Birth</label>
+        <input type="date" id="dob" name="dob">
+    </div>
+
+    <div class="form-group">
+        <label for="insuranceType">Insurance Type</label>
+        <select id="insuranceType" name="insuranceType">
+            <option value="life">Life Insurance</option>
+            <option value="health">Health Insurance</option>
+            <option value="auto">Auto Insurance</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="coverageAmount">Coverage Amount</label>
+        <input type="text" id="coverageAmount" name="coverageAmount">
+    </div>
+
+    <div class="form-group">
+        <label for="policyStartDate">Policy Start Date</label>
+        <input type="date" id="policyStartDate" name="policyStartDate">
+    </div>
+
+    <div class="form-group">
+        <label>Premium Payment Frequency</label>
+        <select id="paymentFrequency" name="paymentFrequency">
+            <option value="monthly">Monthly</option>
+            <option value="quarterly">Quarterly</option>
+            <option value="annually">Annually</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label>Add-ons</label>
+        <div class="checkbox-group">
+            <label><input type="checkbox" name="addon1"> Add-on 1</label>
+            <label><input type="checkbox" name="addon2"> Add-on 2</label>
+            <label><input type="checkbox" name="addon3"> Add-on 3</label>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="beneficiaries">Beneficiaries</label>
+        <textarea id="beneficiaries" name="beneficiaries"></textarea>
+    </div>
+
+    <div class="buttons">
+        <button class="save">Save</button>
+        <button class="cancel">Cancel</button>
+        <button class="next">Next</button>
+    </div>
+</div>
+
+</body>
+</html>
